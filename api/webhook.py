@@ -15,41 +15,40 @@ import urllib.request
 from http.server import BaseHTTPRequestHandler
 
 WELCOME_TEXT = (
-    "Welcome to <b>PERCENT SHOP OTC</b>.\n"
-    "A marketplace for digital goods, unethical software, crypto payment "
-    "infrastructure, Telegram assets, and private development services.\n"
+    "Welcome to <b>Percent Shop</b>.\n"
     "\n"
-    "🔺<b>SOFTWARE</b>\n"
-    "• Custom / unethical software, tools, scripts &amp; web apps\n"
+    "A shop for software, crypto payments, Telegram assets, and unethical "
+    "development.\n"
     "\n"
-    "🔺<b>CRYPTO PAYMENTS</b>\n"
-    "• TON / USDT payment systems, crypto checkouts &amp; non-KYC casino "
-    "payment infrastructure\n"
+    "🔺 <b>SOFTWARE</b>\n"
+    "  └ Custom / unethical software, tools, scripts &amp; web apps\n"
     "\n"
-    "🔺<b>TELEGRAM</b>\n"
-    "• Usernames, digital assets &amp; custom Telegram solutions\n"
+    "🔺 <b>CRYPTO PAYMENTS</b>\n"
+    "  └ TON / USDT systems, crypto checkouts &amp; non-KYC casino payments\n"
     "\n"
-    "🔺<b>CUSTOM DEVELOPMENT</b>\n"
-    "• Terminal &amp; file scripts, automation, data extraction, API "
+    "🔺 <b>TELEGRAM</b>\n"
+    "  └ Usernames, digital assets &amp; custom Telegram solutions\n"
+    "\n"
+    "🔺 <b>CUSTOM DEVELOPMENT</b>\n"
+    "  └ Terminal &amp; file scripts, automation, data extraction, API "
     "integrations &amp; private tools\n"
     "\n"
-    "🔺<b>CUSTOM VPN INFRASTRUCTURE</b>\n"
-    "• Private VPN servers &amp; custom clients\n"
+    "🔺 <b>CUSTOM VPN INFRASTRUCTURE</b>\n"
+    "  └ Private VPN servers &amp; custom clients\n"
     "\n"
-    "Unethical quotes open.\n"
+    "<b>UNETHICAL QUOTES OPEN</b>\n"
     "\n"
-    '🌐 <a href="https://percentshop.dev">Percent Shop</a>'
+    '🌐 <a href="https://percentshop.dev">PERCENT SHOP</a>'
 )
 
 CONTACT_TEXT = (
-    "<b>CONTACT / INQUIRIES</b>\n"
+    "<b>INQUIRIES</b>💬\n"
     "\n"
-    "For custom development, software, crypto payment systems, VPN "
-    "infrastructure, OTC deals, or custom requests:\n"
+    "Text Lick for all inquiries.\n"
     "\n"
     '<a href="https://t.me/drainware">@drainware</a>\n'
     "\n"
-    "DM for quotes, pricing, and project inquiries."
+    "Text for quotes, pricing, and project inquiries."
 )
 
 WELCOME_KEYBOARD = {
