@@ -63,24 +63,28 @@ DEMO_TEXT = (
     "that connects an online platform directly to a customer's digital wallet.\n"
     "\n"
     "<b>Key Features:</b>\n"
-    "• <b>Universal Wallet Support:</b> Built on the official TON Connect "
+    "\n"
+    "• 🌐 <b>Universal Wallet Support:</b> Built on the official TON Connect "
     "standard to link instantly with Tonkeeper, Telegram Wallet, Keeper, and "
     "over 20 other Web3 wallets.\n"
-    "• <b>One-Click Payments:</b> Customers can complete transactions in "
+    "\n"
+    "• ⚡ <b>One-Click Payments:</b> Customers can complete transactions in "
     "seconds by scanning a secure QR code or approving a prompt on their "
     "mobile device.\n"
-    "• <b>Non-Custodial Security:</b> The gateway never handles private keys "
+    "\n"
+    "• 🔒 <b>Non-Custodial Security:</b> The gateway never handles private keys "
     "or seed phrases, requesting only standard transaction approvals to keep "
     "funds safe.\n"
     "\n"
     "<b>Get a Custom Build for Your Project</b>\n"
+    "\n"
     "This is a standard demo interface. If you need a payment processor built "
     "specifically for your casino, Telegram bot, or custom Web3 application, "
     "reach out to us on Telegram to discuss your custom project requirements.\n"
     "\n"
     '🌐 <a href="https://percentshop-ton.vercel.app/">Open the Live Demo</a>\n'
     "\n"
-    'Contact: <a href="https://t.me/drainware">@drainware</a>'
+    '📩 Contact: <a href="https://t.me/drainware">@drainware</a>'
 )
 
 WELCOME_KEYBOARD = {
