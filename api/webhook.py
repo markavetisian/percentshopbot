@@ -55,9 +55,46 @@ CONTACT_TEXT = (
     "Text for quotes, pricing, and project inquiries."
 )
 
+DEMO_TEXT = (
+    "<b>Percent Shop Demo Payment Gateway</b>\n"
+    "\n"
+    "Our platform is a secure, lightweight Web3 payment gateway demo built for "
+    "the TON blockchain ecosystem. It showcases a seamless checkout experience "
+    "that connects an online platform directly to a customer's digital wallet.\n"
+    "\n"
+    "<b>Key Features:</b>\n"
+    "• <b>Universal Wallet Support:</b> Built on the official TON Connect "
+    "standard to link instantly with Tonkeeper, Telegram Wallet, Keeper, and "
+    "over 20 other Web3 wallets.\n"
+    "• <b>One-Click Payments:</b> Customers can complete transactions in "
+    "seconds by scanning a secure QR code or approving a prompt on their "
+    "mobile device.\n"
+    "• <b>Non-Custodial Security:</b> The gateway never handles private keys "
+    "or seed phrases, requesting only standard transaction approvals to keep "
+    "funds safe.\n"
+    "\n"
+    "<b>Get a Custom Build for Your Project</b>\n"
+    "This is a standard demo interface. If you need a payment processor built "
+    "specifically for your casino, Telegram bot, or custom Web3 application, "
+    "reach out to us on Telegram to discuss your custom project requirements.\n"
+    "\n"
+    '🌐 <a href="https://percentshop-ton.vercel.app/">Open the Live Demo</a>\n'
+    "\n"
+    'Contact: <a href="https://t.me/drainware">@drainware</a>'
+)
+
 WELCOME_KEYBOARD = {
     "inline_keyboard": [
+        [{"text": "💎 Live TON Payment Demo", "callback_data": "demo"}],
         [{"text": "📩 Contact / Inquire", "callback_data": "contact"}],
+    ]
+}
+
+DEMO_KEYBOARD = {
+    "inline_keyboard": [
+        [{"text": "🚀 Open Live Demo", "url": "https://percentshop-ton.vercel.app/"}],
+        [{"text": "💬 Message @drainware", "url": "https://t.me/drainware"}],
+        [{"text": "⬅️ Back", "callback_data": "home"}],
     ]
 }
 
@@ -123,6 +160,8 @@ def build_reply(update):
         chat_id = msg["chat"]["id"]
         if query.get("data") == "contact":
             return screen("editMessageText", chat_id, CONTACT_TEXT, CONTACT_KEYBOARD, msg["message_id"])
+        if query.get("data") == "demo":
+            return screen("editMessageText", chat_id, DEMO_TEXT, DEMO_KEYBOARD, msg["message_id"])
         if query.get("data") == "home":
             return screen("editMessageText", chat_id, WELCOME_TEXT, WELCOME_KEYBOARD, msg["message_id"])
     return None
